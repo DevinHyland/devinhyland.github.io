@@ -3,36 +3,126 @@
 <html>
 <head>
     <title>Devin Hyland</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+   
+html {
+   font-family: "Lucida Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
 body {
     background-color: RGB(212,212,212);
+    color: #606060;
 }
+
 
 img {
     border-radius: 50%;
 }
-.topmenu{
-    display: inline;
+footer {
+    background-color: #2B6CA3;
+    margin: 0;
+    height: 100px;
+    border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    border-color: #002E5D;
+    
+}
+.navbutton {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
+.navmenu{
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+}
+
+.navmenu a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navmenu a:hover{
+    color: black;
+}
+
+.column1 {
+    
+}
 </style>
 </head>
-<body background-color:"yellow;" >
-<h1>Devin Hyland</h1>
-<p>Structural Engineer</p>
-<span class="topmenu">
-    <div>HOME</div>
-    <div>RESUME</div>
-    <div>PROJECTS</div>
-    <div>CONTACT</div>
 
-</span>
-<p><img src="devinoo1.jpeg"></p>
-<p>Hello, <br> a bit about me.</p>
-<button>MY RESUME</button>
-<p>
-Structural engineer with 4+ years experience in design of reinforced concrete, steel, and masonry. Knowledgeable in standard construction and fabrication processes, having worked with numerous contractors and architects to bring projects to completion through design and construction.
-</p>
+<body>
+<header>
+    <h1 style="size; 43pt;">Devin Hyland</h1>
+    <p style="size; 18pt;">Structural Engineer</p>
+</header>
+<div class="navmenu">
+    <a>HOME</a>
+    <a>RESUME</a>
+    <a>PROJECTS</a>
+    <a>CONTACT</a>
+    <br>
+</div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+        <img src="devin001.jpg" style="height: 300px; width: 300px; margin: 10px; float: left;">
+    </div>
+    <div class="col-7">
+        <br>
+        <p style="display: inline; padding-bottom: 250px;">Hello, <br>a bit about me.</p>
+        <br>
+        
+        <button class="navbutton" style="background-color: blue;">MY RESUME</button>
+        <button class="navbutton" style="background-color: blue;">MY WORK</button>
+        <button class="navbutton" style="background-color: blue;">MY SKILLS</button>
+        <br>
+        <p style="margin: 20px;">
+        Structural engineer with 4+ years experience in design of reinforced concrete, steel, and masonry. Knowledgeable in standard construction and fabrication processes, having worked with numerous contractors and architects to bring projects to completion through design and construction.
+        </p>
+    </div>
+    <div class="col-1;"></div>
+</div>
+<footer>
+
+</footer>
 </body>
-<footer></footer>
 </html>
