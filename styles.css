@@ -61,6 +61,7 @@ footer p{
     border-radius: 50%;
     color: white;
     font-size: 12pt;
+    border-style: none;
     
 }
 
@@ -76,10 +77,61 @@ footer p{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: #909090;
 }
 
 .navmenu a:hover{
-    color: black;
+    color: RGB(245,149,81);
+}
+.section {
+    width: 120px;
+    height: 120px;
+    background-color: RGB(245,149,81);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 13pt;
+    display: inline-block;
+    float: left;
+}
+
+.iconcontainer1 {
+    width: 40px;
+    height: 40px;
+    background-color: RGB(245,149,81);
+    border-radius: 50%;
+}
+
+.iconcontainer2 {
+    width: 35px;
+    height: 35px;
+    background-color: RGB(245,149,81);
+    border-radius: 50%;
+}
+    
+.workhistory {
+    display: inline-block;
+    width: 75%;
+    padding-left: 20px;
+}
+
+.workhistory h3{
+    display: inline-block;
+    font-size: 14pt;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.workhistory h4{
+    padding-top: 0px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.workhistory p{
+    font-size: 11pt;
 }
 /*local*/
 
