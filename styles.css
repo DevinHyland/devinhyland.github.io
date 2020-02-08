@@ -39,9 +39,20 @@ body {
     margin: 0;
 }
 
-
-img {
+.profileimg {
     border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    float: left;
+    display: inline-block;
+}
+
+.projectimg {
+    height: 260px;
+    width: 360px;
+    float: left;
+    display: inline-block;
 }
 footer {
     background-color: #2B6CA3;
@@ -134,6 +145,17 @@ footer p{
 
 .workhistory p{
     font-size: 11pt;
+}
+
+.linebreak1 {
+    border-top-style: solid;
+    border-width: thin;
+    margin-top: 20px;
+}
+
+.linebreak2 {
+    border-top-style: solid;
+    border-width: thin;
 }
 /*local*/
 
