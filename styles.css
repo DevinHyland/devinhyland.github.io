@@ -52,7 +52,7 @@ body {
     height: 260px;
     width: 360px;
     float: left;
-    display: inline-block;
+    display: block;
 }
 footer {
     background-color: #2B6CA3;
