@@ -54,6 +54,15 @@ body {
     float: left;
     display: block;
 }
+
+.projectlistimg {
+    height: 250px;
+    width: 250px;
+    float: center;
+    display: block;
+}
+
+
 footer {
     background-color: #2B6CA3;
     margin: 0;
@@ -160,3 +169,11 @@ footer p{
 /*local*/
 
 /*Resume*/ 
+
+/*Project List*/
+
+.projectlisttitle {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14pt;
+}
