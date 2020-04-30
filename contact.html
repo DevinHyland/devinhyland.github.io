@@ -9,16 +9,38 @@
     <link type="text/css" rel="stylesheet" href="styles.css">
 
     <style>
-        .projectcontainer{
-            width: 90px;
-            height: 90px;
-            background-color: RGB(245,149,81);
-            border-radius: 50%;
-            text-align: center;
-            color: white;
-            font-size: 10pt;
-            display: block;
-            float: left;
+         /* Style inputs with type="text", select elements and textareas */
+        input[type=text], select, textarea {
+          width: 100%; /* Full width */
+          padding: 12px; /* Some padding */
+          border: 1px solid #ccc; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 16px; /* Bottom margin */
+          resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
         }
     </style>
 </head>
@@ -27,55 +49,41 @@
 <header>
     <div class="col-2"></div>
     <div class="col-10">
-        <h1 class="nameheading">Devin Hyland</h1>
-        <p class="namesubheading">Structural EIT</p>
+        <h1 style="font-size: 36pt; padding-bottom: 5px; margin-bottom: 5px;">Devin Hyland</h1>
+        <p style="font-size: 18pt; margin-top: 5px;">Structural EIT</p>
     </div>
 </header>
 <div class="navmenu" style="padding-bottom: 10px;">
     <a href="index.html">HOME</a>
     <a href="resume.html">RESUME</a>
-    <a style="color: RGB(245,149,81);">PROJECTS</a>
-    <a href="contact.html">CONTACT</a>
+    <a href="projects.html">PROJECTS</a>
+    <a style="color: RGB(245,149,81);">CONTACT</a>
     <br>
 </div>
 
 <div class="row">
     <div class="col-2"></div>
-    <div class="col-3"><img src="images/620King001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">620 King St. W. | Toronto, ON</h3>
-    </div>
-    <div class="col-3"><img src="images/22John001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">22 John St. | York, ON</h3></div>
-    <div class="col-3"><img src="images/35Wabash001.jpg" class="projectlistimg"><h3 class="projectlisttitle">35 Wabash Ave. | Toronto, ON</h3></div>
-    
-    
-    <div class="col-1"></div>
-</div>
-
-<div class="row">
     <div class="col-2"></div>
-    <div class="col-3"><img src="images/LibertyCentral001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">Liberty Central | Toronto, ON</h3>
-    </div>
-    <div class="col-3"><img src="images/45Railroad001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">45 Railroad | Brampton, ON</h3></div>
-    <div class="col-3"><img src="images/Stonegate001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">Stonegate | Etobicoke, ON</h3></div>
-    
-    <div class="col-1"></div>
-</div>
+    <div class="col-6">
+      <form action="https://formspree.io/xwkrejvr" method="post">
 
-<div class="row">
-    <div class="col-2"></div>
-    <div class="col-3"><img src="images/7Onthepark001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">7 On The Park | Toronto, ON</h3>
+        <label>Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+
+        <label>Email Address</label>
+        <input type="text" id="email" name="_replyto" placeholder="email">
+
+        <label>Organization</label>
+        <input type="text" id="organization" name="organization" placeholder="Organization">
+
+        <label>Subject</label>
+        <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
     </div>
-    <div class="col-3"><img src="images/333University001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">333 University | Kingston, ON</h3></div>
-    <div class="col-3"><img src="images/390Dufferin001.jpg" class="projectlistimg">
-    <h3 class="projectlisttitle">390 Dufferin St. | Toronto, ON</h3></div>
-    
-    <div class="col-1"></div>
+    <div class="col-2"></div>
 </div>
 
 <footer>
@@ -126,3 +134,4 @@
 <div style="height: 2cm;"></div>
 </body>
 </html>
+
